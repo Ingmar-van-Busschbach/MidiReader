@@ -1,0 +1,98 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - master
+    - develop
+  paths:
+    include:
+    - 'DryWetMidi/*'
+    - 'Resources/CI/build-artifacts-library.yaml'
+    - 'Resources/CI/Templates/stage-build-native-libs.yaml'
+    - 'Resources/CI/Templates/step-copy-native-libraries-near-csproj.yaml'
+    - 'Resources/CI/Templates/job-build-package.yaml'
+    - 'Resources/Native/*'
+
+pr: none
+
+variables:
+- group: DryWetMIDI-Common-Variables
+- name: buildConfiguration
+  value: 'Release'
+
+name: BuildLibrary_$(LibraryVersion)$(Rev:.r)
+
+stages:
+- template: Templates/stage-build-native-libs.yaml
+- stage: BuildBinaries
+  displayName: Build binaries
+  pool:
+    vmImage: 'windows-latest'
+  jobs:
+  - template: Templates/job-build-package.yaml
+    parameters:
+      buildConfiguration: $(buildConfiguration)
+  - job: BuildBinaries
+    displayName: Build binaries
+    steps:
+    - template: Templates/step-copy-native-libraries-near-csproj.yaml
+    
+    - task: PowerShell@2
+      displayName: Generate obsolete API hints
+      inputs:
+        targetType: filePath
+        filePath: '$(Build.SourcesDirectory)/Resources/Scripts/Generate obsolete API hints.ps1'
+    
+    - task: DotNetCoreCLI@2
+      displayName: Build project
+      inputs:
+        command: 'build'
+        projects: |
+          DryWetMidi/Melanchall.DryWetMidi.csproj
+        arguments: '--configuration $(buildConfiguration)'
+    
+    - task: PowerShell@2
+      displayName: Delete pdb files
+      inputs:
+        targetType: 'inline'
+        script: |
+          Get-ChildItem $(Build.SourcesDirectory) -Include *.pdb -Recurse | Remove-Item -Force
+    
+    - task: ArchiveFiles@2
+      displayName: Archive .NET Framework binaries
+      inputs:
+        rootFolderOrFile: 'DryWetMidi\bin\$(buildConfiguration)\net45'
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: '$(Build.ArtifactStagingDirectory)\Binaries\DryWetMIDI.$(LibraryVersion)-bin-net45.zip'
+    
+    - task: ArchiveFiles@2
+      displayName: Archive .NET Standard binaries
+      inputs:
+        rootFolderOrFile: 'DryWetMidi\bin\$(buildConfiguration)\netstandard2.0'
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: '$(Build.ArtifactStagingDirectory)\Binaries\DryWetMIDI.$(LibraryVersion)-bin-netstandard20.zip'
+        
+    - task: PowerShell@2
+      displayName: Copy native binaries in directory
+      inputs:
+        targetType: 'inline'
+        script: |
+          New-Item -Path "$(Pipeline.Workspace)" -Name "Native" -ItemType "directory"
+          Copy-Item -Path "$(Pipeline.Workspace)/NativeLibraries/**/*.dll" -Destination "$(Pipeline.Workspace)/Native"
+          Copy-Item -Path "$(Pipeline.Workspace)/NativeLibraries/**/*.dylib" -Destination "$(Pipeline.Workspace)/Native"
+        
+    - task: ArchiveFiles@2
+      displayName: Archive native binaries
+      inputs:
+        rootFolderOrFile: '$(Pipeline.Workspace)\Native'
+        includeRootFolder: false
+        archiveType: 'zip'
+        archiveFile: '$(Build.ArtifactStagingDirectory)\Binaries\DryWetMIDI.$(LibraryVersion)-bin-native.zip'
+    
+    - task: PublishPipelineArtifact@1
+      displayName: Publish 'Binaries' artifact
+      inputs:
+        targetPath: $(Build.ArtifactStagingDirectory)\Binaries
+        artifact: Binaries
