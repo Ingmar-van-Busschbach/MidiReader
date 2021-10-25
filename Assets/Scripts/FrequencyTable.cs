@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class FrequencyTable
-{
+{ //Static frequency table to translate note numbers into actual sound frequencies
     private static float[] frequencyTable = {
         16.35f, 17.32f, 18.35f, 19.44f, 20.60f, 21.82f, 23.12f, 24.49f, 25.95f, 27.5f, 29.13f, 30.86f, //C0-B0
         32.70f, 34.64f, 36.70f, 38.89f, 41.20f, 43.65f, 46.24f, 48.99f, 51.91f, 55f, 58.27f, 61.73f, //C1-B1

@@ -12,7 +12,7 @@ public class MidiReaderEditor : Editor
             SelectNewFile();
         }
         using (var check = new EditorGUI.ChangeCheckScope())
-        { //Draw the default settings available within the inspector
+        {
             DrawDefaultInspector();
         }
     }
