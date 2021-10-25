@@ -20,6 +20,8 @@ public class ChannelSettings
 
     public void GenerateChannels()
     { //Generate audio sources to play the midi audio through
+        audioSources = new List<AudioSource>();
+        gameObjects = new List<GameObject>();
         for (int i = 0; i<channels; i++)
         {
             string name = "Channel " + (i+1);
