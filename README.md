@@ -7,3 +7,5 @@ The library I chose was DryWetMidi. This library is a Midi reading and writing l
 
 #### Instruments
 The Midi files only contain the data of what notes to play at what time. It does not contain any audio files. As such, I created my own library that can modulate sound files to the right frequency, with a given source frequency and note number input.
+
+![Video](https://www.youtube.com/watch?v=PlKLKvDN9Yk)
