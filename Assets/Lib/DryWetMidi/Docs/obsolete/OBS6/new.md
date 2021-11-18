@@ -1,0 +1,1 @@
+* [GetObjectsUtilities](xref:Melanchall.DryWetMidi.Interaction.GetObjectsUtilities)

@@ -1,0 +1,27 @@
+trigger: none
+
+pr: none
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+- group: DryWetMIDI-Common-Variables
+- name: buildConfiguration
+  value: 'Release'
+- name: prereleaseNumber
+  value: $[counter(variables['LibraryVersion'], 1)]
+
+name: BuildLibrary_PreRelease_$(LibraryVersion)$(Rev:.r)
+
+stages:
+- template: Templates/stage-build-native-libs.yaml
+- stage: BuildBinaries
+  displayName: Build binaries
+  pool:
+    vmImage: 'windows-latest'
+  jobs:
+  - template: Templates/job-build-package.yaml
+    parameters:
+      buildConfiguration: $(buildConfiguration)
+      prereleaseNumber: $(prereleaseNumber)
