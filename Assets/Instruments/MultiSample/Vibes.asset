@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138df2436ed7e644f85bb694a3ea9374, type: 3}
+  m_Name: Vibes
+  m_EditorClassIdentifier: 
+  instrumentSettings:
+  - sourceSound: {fileID: 8300000, guid: e09125e622c583340adb59d223812109, type: 3}
+    noteName: C2
+    sourceFrequency: 130.8
+    sourceCutoff: 40
+  - sourceSound: {fileID: 8300000, guid: d8c75b5985f5b0f40b3c3865a5173515, type: 3}
+    noteName: C3
+    sourceFrequency: 261.6
+    sourceCutoff: 52
+  - sourceSound: {fileID: 8300000, guid: 62451ea8d396c444e9791a64930e58fc, type: 3}
+    noteName: G3
+    sourceFrequency: 391.9
+    sourceCutoff: 59
+  - sourceSound: {fileID: 8300000, guid: da4294711b432bd4bb3af22602bc3a9f, type: 3}
+    noteName: C4
+    sourceFrequency: 523.2
+    sourceCutoff: 64
+  - sourceSound: {fileID: 8300000, guid: 26594ea45d261824eaa7f7b517aae2f8, type: 3}
+    noteName: G4
+    sourceFrequency: 783.9
+    sourceCutoff: 71
+  - sourceSound: {fileID: 8300000, guid: bc56ee96c4386444db45f731c9b05e5b, type: 3}
+    noteName: C5
+    sourceFrequency: 1046
+    sourceCutoff: 76
+  - sourceSound: {fileID: 8300000, guid: e2761dda0b6752a4a9f300e8cb0715d2, type: 3}
+    noteName: G5
+    sourceFrequency: 1567
+    sourceCutoff: 83
+  - sourceSound: {fileID: 8300000, guid: 9003d8c779885b7419742837129436ac, type: 3}
+    noteName: C6
+    sourceFrequency: 2093
+    sourceCutoff: 88
+  - sourceSound: {fileID: 8300000, guid: 4dfe1d7fbd606eb4da1c8f47adde16d5, type: 3}
+    noteName: C7
+    sourceFrequency: 4186
+    sourceCutoff: 999

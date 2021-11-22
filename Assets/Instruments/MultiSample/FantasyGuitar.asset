@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138df2436ed7e644f85bb694a3ea9374, type: 3}
+  m_Name: FantasyGuitar
+  m_EditorClassIdentifier: 
+  instrumentSettings:
+  - sourceSound: {fileID: 8300000, guid: 57bcda8577ff6f74eb2445e5131fa6d3, type: 3}
+    noteName: C2
+    sourceFrequency: 130.8
+    sourceCutoff: 40
+  - sourceSound: {fileID: 8300000, guid: 164390f642fe68e43974b03e0e3b5a5a, type: 3}
+    noteName: C3
+    sourceFrequency: 261.6
+    sourceCutoff: 52
+  - sourceSound: {fileID: 8300000, guid: 8525841433400504bb46316b237c89e5, type: 3}
+    noteName: G3
+    sourceFrequency: 391.9
+    sourceCutoff: 59
+  - sourceSound: {fileID: 8300000, guid: 783e4e7b16af3b84e9407434bdeeef0e, type: 3}
+    noteName: C4
+    sourceFrequency: 523.2
+    sourceCutoff: 64
+  - sourceSound: {fileID: 8300000, guid: d52c68e27c01e9546ade9bc34ad858e9, type: 3}
+    noteName: G4
+    sourceFrequency: 783.9
+    sourceCutoff: 71
+  - sourceSound: {fileID: 8300000, guid: 64009de06d9f49e4b90ed815ff389d91, type: 3}
+    noteName: C5
+    sourceFrequency: 1046
+    sourceCutoff: 76
+  - sourceSound: {fileID: 8300000, guid: 3261eab5a6b7bd54591afb0f59ca3e45, type: 3}
+    noteName: G5
+    sourceFrequency: 1567
+    sourceCutoff: 83
+  - sourceSound: {fileID: 8300000, guid: 077312fd81d79c24aae4d653554b4bc9, type: 3}
+    noteName: C6
+    sourceFrequency: 2093
+    sourceCutoff: 88
+  - sourceSound: {fileID: 8300000, guid: 30fe5ec5b8dd10244be70224646909bd, type: 3}
+    noteName: C7
+    sourceFrequency: 4186
+    sourceCutoff: 999

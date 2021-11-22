@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138df2436ed7e644f85bb694a3ea9374, type: 3}
+  m_Name: Harp
+  m_EditorClassIdentifier: 
+  instrumentSettings:
+  - sourceSound: {fileID: 8300000, guid: 7609861a7b5ce3c468696bfc73f39993, type: 3}
+    noteName: C2
+    sourceFrequency: 130.8
+    sourceCutoff: 40
+  - sourceSound: {fileID: 8300000, guid: 0be30137a5927d042be47e6bc664a1e9, type: 3}
+    noteName: C3
+    sourceFrequency: 261.6
+    sourceCutoff: 52
+  - sourceSound: {fileID: 8300000, guid: 96e5ce2fae843564b8a24ed5656d86b8, type: 3}
+    noteName: G3
+    sourceFrequency: 391.9
+    sourceCutoff: 59
+  - sourceSound: {fileID: 8300000, guid: 3814bc3e3250e254983ce24ed801bb48, type: 3}
+    noteName: C4
+    sourceFrequency: 523.2
+    sourceCutoff: 64
+  - sourceSound: {fileID: 8300000, guid: 3337a338b836d784581844de99ecdb7a, type: 3}
+    noteName: G4
+    sourceFrequency: 783.9
+    sourceCutoff: 71
+  - sourceSound: {fileID: 8300000, guid: ef6d4e03deae54445a83c7a60df0ccd4, type: 3}
+    noteName: C5
+    sourceFrequency: 1046
+    sourceCutoff: 76
+  - sourceSound: {fileID: 8300000, guid: e7c945602c3031d49a301a41081631a3, type: 3}
+    noteName: G5
+    sourceFrequency: 1567
+    sourceCutoff: 83
+  - sourceSound: {fileID: 8300000, guid: b94d863807c1f1e43a012a9b134c110c, type: 3}
+    noteName: C6
+    sourceFrequency: 2093
+    sourceCutoff: 88
+  - sourceSound: {fileID: 8300000, guid: fb83d04ecb38be74da0ecfc6499a82ff, type: 3}
+    noteName: C7
+    sourceFrequency: 4186
+    sourceCutoff: 999

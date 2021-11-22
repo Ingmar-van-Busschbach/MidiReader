@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138df2436ed7e644f85bb694a3ea9374, type: 3}
+  m_Name: BarPiano
+  m_EditorClassIdentifier: 
+  instrumentSettings:
+  - sourceSound: {fileID: 8300000, guid: b57427890d3bd0e42b482e1bf69c3789, type: 3}
+    noteName: C1
+    sourceFrequency: 65.4
+    sourceCutoff: 28
+  - sourceSound: {fileID: 8300000, guid: ad149b32e493bd643bf9ea2c13e44900, type: 3}
+    noteName: C2
+    sourceFrequency: 130.8
+    sourceCutoff: 40
+  - sourceSound: {fileID: 8300000, guid: f1db918ebe72f7b449577210ebfc07cc, type: 3}
+    noteName: G2
+    sourceFrequency: 195.9
+    sourceCutoff: 47
+  - sourceSound: {fileID: 8300000, guid: c6473bc1fabdc2f4ab2f2980c0ffed84, type: 3}
+    noteName: C3
+    sourceFrequency: 261.6
+    sourceCutoff: 52
+  - sourceSound: {fileID: 8300000, guid: 154ac5d144facc34189c4c06b658113b, type: 3}
+    noteName: G3
+    sourceFrequency: 391.9
+    sourceCutoff: 59
+  - sourceSound: {fileID: 8300000, guid: 6cc09263953230243a89d045fae7798a, type: 3}
+    noteName: C4
+    sourceFrequency: 523.2
+    sourceCutoff: 64
+  - sourceSound: {fileID: 8300000, guid: 7025c2ffe264483488d4da6dad139ca4, type: 3}
+    noteName: G4
+    sourceFrequency: 783.9
+    sourceCutoff: 71
+  - sourceSound: {fileID: 8300000, guid: bd37fe48dfac2b0448cf02804b78ae4c, type: 3}
+    noteName: C5
+    sourceFrequency: 1046
+    sourceCutoff: 76
+  - sourceSound: {fileID: 8300000, guid: 42a034cd2c7f3974ea50ec556c502b2a, type: 3}
+    noteName: G5
+    sourceFrequency: 1567
+    sourceCutoff: 83
+  - sourceSound: {fileID: 8300000, guid: d4dd451dea940204095f5c7da36ba4a5, type: 3}
+    noteName: C6
+    sourceFrequency: 2093
+    sourceCutoff: 88
+  - sourceSound: {fileID: 8300000, guid: 01ce8661b0bed2b499c468e9d9a4a9fb, type: 3}
+    noteName: G6
+    sourceFrequency: 3135
+    sourceCutoff: 95
+  - sourceSound: {fileID: 8300000, guid: 33f4e276d2800ae48852ebdfa831e5fc, type: 3}
+    noteName: C7
+    sourceFrequency: 4186
+    sourceCutoff: 999

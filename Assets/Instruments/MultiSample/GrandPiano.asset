@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138df2436ed7e644f85bb694a3ea9374, type: 3}
+  m_Name: GrandPiano
+  m_EditorClassIdentifier: 
+  instrumentSettings:
+  - sourceSound: {fileID: 8300000, guid: 0766c056e63978b4f94206e76a2b69bc, type: 3}
+    noteName: C1
+    sourceFrequency: 32.7
+    sourceCutoff: 14
+  - sourceSound: {fileID: 8300000, guid: dd7daa2a342c5b7499c9b8f1c441faa1, type: 3}
+    noteName: G1
+    sourceFrequency: 48.99
+    sourceCutoff: 21
+  - sourceSound: {fileID: 8300000, guid: 2b58bbeb9b45e1745b038f2a34942efe, type: 3}
+    noteName: C2
+    sourceFrequency: 65.4
+    sourceCutoff: 26
+  - sourceSound: {fileID: 8300000, guid: 31751dda975044848be9f3816bf05fed, type: 3}
+    noteName: E2
+    sourceFrequency: 82.4
+    sourceCutoff: 30
+  - sourceSound: {fileID: 8300000, guid: 96c4e3f3c7c4f514299df674d30c1a16, type: 3}
+    noteName: G2
+    sourceFrequency: 97.99
+    sourceCutoff: 33
+  - sourceSound: {fileID: 8300000, guid: 0e96bce93e9227341b1b005e3be11d6b, type: 3}
+    noteName: C3
+    sourceFrequency: 130.8
+    sourceCutoff: 38
+  - sourceSound: {fileID: 8300000, guid: 6863e85e8f6fcde4b9292d01d31b43c8, type: 3}
+    noteName: E3
+    sourceFrequency: 164.8
+    sourceCutoff: 42
+  - sourceSound: {fileID: 8300000, guid: 0c43d491375a56f43b48e745e7667438, type: 3}
+    noteName: G3
+    sourceFrequency: 195.9
+    sourceCutoff: 45
+  - sourceSound: {fileID: 8300000, guid: 3f9124326774b2d4c8d585245012cbb7, type: 3}
+    noteName: A#3
+    sourceFrequency: 116.5
+    sourceCutoff: 36
+  - sourceSound: {fileID: 8300000, guid: 42f23e78ddc9f8c48972b2a021465ddc, type: 3}
+    noteName: C4
+    sourceFrequency: 261.6
+    sourceCutoff: 50
+  - sourceSound: {fileID: 8300000, guid: ad6ca08ea9db29e479fb4fd50d203ea3, type: 3}
+    noteName: E4
+    sourceFrequency: 329.6
+    sourceCutoff: 54
+  - sourceSound: {fileID: 8300000, guid: 96b6bf81309e93344982b314895dcdfb, type: 3}
+    noteName: G4
+    sourceFrequency: 391.9
+    sourceCutoff: 57
+  - sourceSound: {fileID: 8300000, guid: 4bbf4bb1fca46f74f85d5d69bf8486e3, type: 3}
+    noteName: A#4
+    sourceFrequency: 233
+    sourceCutoff: 48
+  - sourceSound: {fileID: 8300000, guid: ddba1a28b7dc59d4d9765a4ade97ebfd, type: 3}
+    noteName: C5
+    sourceFrequency: 523.2
+    sourceCutoff: 62
+  - sourceSound: {fileID: 8300000, guid: fdc248848f993a64b9a40cb734fde0d9, type: 3}
+    noteName: E5
+    sourceFrequency: 659.2
+    sourceCutoff: 66
+  - sourceSound: {fileID: 8300000, guid: 5c27e00f8be57cc43a29273c9f9d67d2, type: 3}
+    noteName: G5
+    sourceFrequency: 783.9
+    sourceCutoff: 69
+  - sourceSound: {fileID: 8300000, guid: e1922b539a1b2154d9c074b76e1bcd93, type: 3}
+    noteName: A#5
+    sourceFrequency: 466.1
+    sourceCutoff: 60
+  - sourceSound: {fileID: 8300000, guid: ee9b513d5e2645a4c885e15a7ae455d7, type: 3}
+    noteName: C6
+    sourceFrequency: 1046
+    sourceCutoff: 74
+  - sourceSound: {fileID: 8300000, guid: 4af4b5856facb6541bab267373a8ea7c, type: 3}
+    noteName: E6
+    sourceFrequency: 1318
+    sourceCutoff: 78
+  - sourceSound: {fileID: 8300000, guid: e62dcdf4d47ec2249a5d719bc04b104f, type: 3}
+    noteName: G6
+    sourceFrequency: 1567
+    sourceCutoff: 81
+  - sourceSound: {fileID: 8300000, guid: 2beacb604575e5941a645093dcf76651, type: 3}
+    noteName: A#6
+    sourceFrequency: 932.3
+    sourceCutoff: 72
+  - sourceSound: {fileID: 8300000, guid: 94344d3240d528c40a9f102b505707e8, type: 3}
+    noteName: C7
+    sourceFrequency: 2093
+    sourceCutoff: 86
+  - sourceSound: {fileID: 8300000, guid: 5db98df9bf631234a96b849492aa505f, type: 3}
+    noteName: G7
+    sourceFrequency: 3135
+    sourceCutoff: 93
+  - sourceSound: {fileID: 8300000, guid: e6488248fd4e1f74c89b36de7af9e548, type: 3}
+    noteName: C8
+    sourceFrequency: 4186
+    sourceCutoff: 999
